@@ -3,4 +3,141 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;;
+}
+
+.container-header{
+    font-family: 'Nerko One';
+    background-color: white;
+    color: rgb(255, 158, 30);
+    font-size: 14px;
+    padding: 12px;
+    margin-bottom: 1.5rem;
+}
+
+body{
+    background-color: rgb(246 245 243);
+}
+
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.dolci-e-desserts{
+    font-size: 12px;
+    color: rgb(178, 178, 178);
+}
+
+.titolo-fisso{
+    font-size: 36px;
+    color: rgb(78 57 105);
+}
+
+.titolo-rimovibile{
+    font-size: 36px;
+    color: rgb(78 57 105);
+}
+
+.row{
+    display: flex;
+    margin: 20px 0px;
+}
+
+.col-sx{
+    width: 70%;
+}
+
+.col-dx{
+    width: 30%;
+    background-color: white;
+    border: 1px solid #0000001D;
+}
+
+.col-dx h4{
+    padding: 20px;
+    font-size: 16px;
+}
+
+.col-dx ul{
+    padding: 0px 20px;
+    list-style-type: none;
+    font-size: 12px;
+}
+
+.col-dx ul li{
+    padding-bottom: 12px;
+
+}
+
+.container-bottoni{
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+}
+
+.container-bottoni a{
+    text-decoration: none;
+    background-color: white;
+    padding: 7px 40px;
+    border: 1px solid #0000001D;
+    border-radius: 22px;
+
+
+}
+.bottoni-rimovibili{
+    color: black;
+}
+
+
+
+
+/* regole smartphone */
+@media screen and (max-width: 640px) {
+    
+    .container-header {
+        text-align: center;
+        padding: 12px 0px;
+    }
+
+    .titolo-rimovibile{
+        display: none;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .container-bottoni a{
+        padding: none;
+    }
+}
+
+/* regole tablet */
+@media screen and (max-width: 1019px) {
+
+    main{
+       width: 90%;
+    }
+    .row{
+        display: block;
+    }
+
+    .col-dx,.col-sx{
+        width: 100%;
+    }
+
+    .col-dx{
+        padding-bottom: 20px;
+    }
+
+    .bottoni-rimovibili{
+        display: none;
+    }
+
+    .container-bottoni a {
+        font-size: 20px;
+        
+    }
+
 }
