@@ -89,9 +89,64 @@ main{
     color: black;
 }
 
+.container-banner{
+    width: 100%;
+    margin: 2rem 0;
+}
 
+.container-banner img{
+    width: 100%;
+}
 
+.container-presentazione{
+    width: 100%;
+}
 
+.tiramisu{
+    width: 32%;
+    float: left;
+    margin-right:20px ;
+    padding-top: 8px;
+}
+
+.container-presentazione p{
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.separee{
+    width: 8%;
+    border: 1.5px solid rgb(255, 174, 0);
+    margin-top: 0.5rem;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(126, 92, 168);
+    color: white;
+    
+}
+
+.footer-sx {
+    margin-left: 15px;
+}
+
+.footer-sx h5{
+    margin-bottom: 5px;
+}
+
+.footer-sx span:first-of-type {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.footer-dx{
+
+}
 /* regole smartphone */
 @media screen and (max-width: 640px) {
     
@@ -110,6 +165,25 @@ main{
 
     .container-bottoni a{
         padding: none;
+    }
+
+    .container-banner{
+        display: none;
+    }
+
+    .container-presentazione {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .tiramisu{
+        display: block;
+        float: none;
+        margin-bottom: 2rem;
+        margin-right: 0;
+        width: 70%;
     }
 }
 
@@ -138,6 +212,15 @@ main{
     .container-bottoni a {
         font-size: 20px;
         
+    }
+
+    .tiramisu{
+        width: 40%;
+    }
+
+    .container-presentazione p{
+        font-size: 17px;
+        line-height: 33px;
     }
 
 }
